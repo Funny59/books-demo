@@ -7,4 +7,9 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('books');
+  this.route('speakers');
+  this.route('edit-speaker');
+  this.route('edit-book');
+  this.route('404', {path: '*path'});
 });
