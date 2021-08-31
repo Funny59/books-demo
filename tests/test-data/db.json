@@ -1,0 +1,99 @@
+{
+  "speakers": [
+    {
+      "id": 1,
+      "lastName": "Толстой",
+      "firstName": "Лев",
+      "secondName": "Николаевич",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "lastName": "Блок",
+      "firstName": "Александр",
+      "secondName": "Александрович",
+      "image": ""
+    },
+    {
+      "firstName": "Николай",
+      "secondName": "Васильевич",
+      "lastName": "Гоголь",
+      "id": 6
+    },
+    {
+      "firstName": "Михаил",
+      "secondName": "Юрьевич",
+      "lastName": "Лермонтов",
+      "id": 7
+    },
+    {
+      "firstName": "Сергей",
+      "secondName": "Александрович",
+      "lastName": "Есенин",
+      "id": 8
+    },
+    {
+      "firstName": "Анна",
+      "secondName": "Андреевна",
+      "lastName": "Ахматова",
+      "id": 9
+    },
+    {
+      "firstName": "Владимир ",
+      "secondName": "Иванович",
+      "lastName": "Даль",
+      "id": 10
+    },
+    {
+      "firstName": "Фёдор",
+      "secondName": "Михайлович",
+      "lastName": "Достоевский",
+      "id": 13
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Война и мир",
+      "author": "Л. Н. Толстой",
+      "pages": "1287",
+      "rating": 97,
+      "cover": "",
+      "description": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B9%D0%BD%D0%B0_%D0%B8_%D0%BC%D0%B8%D1%80",
+      "tags": [
+        "историяроссии",
+        "наполеон"
+      ],
+      "coverURL": "/uploads/cover-1630421423983.jpg"
+    },
+    {
+      "title": "Мцыри",
+      "author": "М. Ю. Лермонтов",
+      "pages": "96",
+      "rating": "",
+      "cover": "",
+      "description": "https://ru.wikipedia.org/wiki/%D0%9C%D1%86%D1%8B%D1%80%D0%B8",
+      "tags": [
+        "история",
+        "приключения",
+        "наука"
+      ],
+      "id": 8,
+      "coverURL": "/uploads/origin_0_a75a09c3cb9d237714a15d37c07c7209-1630412570273.jpg"
+    },
+    {
+      "title": "Мёртвые души",
+      "author": "Н. В. Гоголь",
+      "pages": "352",
+      "rating": 91,
+      "cover": "",
+      "description": "https://ru.wikipedia.org/wiki/%D0%9C%D1%91%D1%80%D1%82%D0%B2%D1%8B%D0%B5_%D0%B4%D1%83%D1%88%D0%B8",
+      "tags": [
+        "историяроссии",
+        "коррупция"
+      ],
+      "id": 9,
+      "coverURL": "/uploads/189496_55695164-1630416416496.jpg"
+    }
+  ]
+}

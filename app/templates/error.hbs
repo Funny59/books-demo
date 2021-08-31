@@ -1,5 +1,5 @@
 <div class="container h-100">
   <div class="row fixed-center align-items-center h-100 justify-content-center">
-    <h4>Ой! Что-то пошло не так...</h4>
+    <h4>Ой! Что-то пошло не так... {{#if model.error}}Это очень похоже на {{model.error}}{{/if}}</h4>
   </div>
 </div>

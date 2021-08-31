@@ -1,0 +1,13 @@
+{
+    "speakers": [
+      { "id": 1, "lastName": "Толстой", "firstName": "Лев", "secondName": "Николаевич", "image": ""},
+      { "id": 2, "lastName": "Есенин", "firstName": "Сергей", "secondName": "Александрович", "image": ""},
+      { "id": 3, "lastName": "Гоголь", "firstName": "Николай", "secondName": "Васильевич", "image": ""},
+      { "id": 2, "lastName": "Пушкин", "firstName": "Александр", "secondName": "Сергеевич", "image": ""},
+      { "id": 2, "lastName": "Блок", "firstName": "Александр", "secondName": "Александрович", "image": ""}
+    ],
+    "books": [
+      { "id": 1, "title": "Война и мир", "author": "Л. Н. Толстой", "pages": 1300, "rating": 97, "cover": "", "description":"https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B9%D0%BD%D0%B0_%D0%B8_%D0%BC%D0%B8%D1%80", "tags":[ "историяроссии", "наполеон"] },
+      { "id": 2, "title": "Мёртвые души", "author": "Н. В. Гоголь", "pages": 352, "rating": 91, "cover": "", "description":"https://ru.wikipedia.org/wiki/%D0%9C%D1%91%D1%80%D1%82%D0%B2%D1%8B%D0%B5_%D0%B4%D1%83%D1%88%D0%B8", "tags":[ "историяроссии", "коррупция"]}
+    ]
+  }

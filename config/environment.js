@@ -4,6 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'books-demo',
     environment,
+    backendURL: 'http://localhost:3000',
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -22,6 +23,8 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
+  ENV.fileUploadURL = ENV.backendURL + '/FileUpload';
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

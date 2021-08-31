@@ -27,7 +27,7 @@ module.exports = function(defaults) {
   app.import('vendor/tagsinput.css');
 
   app.import('vendor/jquery.flexberry.downloadFile.js');
-  //app.import('vendor/jquery.blobajaxtransport.js');
+  app.import('vendor/jquery.blobajaxtransport.js');
   // app.import('node_modules/blueimp-file-upload/js/jquery.fileupload.js');
 
   const jsFiles = funnel('vendor', {
