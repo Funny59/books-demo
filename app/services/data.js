@@ -35,10 +35,16 @@ export default Service.extend({
     });
   },
 
-  getBooks(search) {
+  getBooks(search, tag) {
     let queryParams = '';
     if (search) {
       queryParams = `?q=${search}`;
+    }
+    if(tag){
+      if(search)
+        queryParams = queryParams + `&tags_like=${tag}`;
+      else
+      queryParams = queryParams + `?tags_like=${tag}`;
     }
 
     return fetch(`${ENV.backendURL}/books${queryParams}`).then((response) => response.json());
