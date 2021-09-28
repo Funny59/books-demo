@@ -1,15 +1,15 @@
 import Controller from '@ember/controller';
-import {inject as service} from '@ember/service';
 
 export default Controller.extend({
   queryParams: ['search'],
   search: '',
-  dataService: service('data'),
 
   actions: {
     async deleteSpeaker(id){
+
       try {
-        await this.get('dataService').deleteSpeaker(id);
+        let post = this.get('store').peekRecord('speaker', id);
+        await post.destroyRecord();
       } catch (error) {
         this.transitionToRoute('error', { error: 'Connection failed'});
       }

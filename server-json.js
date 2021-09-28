@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-console */
 const jsonServer = require('json-server')
 const path = require('path');
@@ -46,7 +47,8 @@ const getError = (title, detail, status, pathToAttribute) => {
 };
 
 const server = jsonServer.create()
-const router = jsonServer.router('./tests/test-data/db.json')
+const router = jsonServer.router('./db.json')
+// const router = jsonServer.router('./tests/test-data/db.json')
 const middlewares = jsonServer.defaults()
 
 // Set default middlewares (logger, static, cors and no-cache)
@@ -55,6 +57,15 @@ server.use(middlewares)
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser);
+server.use((req, res, next) => {
+  if(req.method === 'DELETE'){
+    let urgSegm = req.url.split('/');
+    res.json({
+      id: urgSegm[urgSegm.length-1]
+    })
+  }
+  next();
+});
 
 server.post("/FileUpload", upload.any(), function (req, res) {
 
